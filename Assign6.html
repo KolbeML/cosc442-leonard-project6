@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>Assign6</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">unsuccessfulUserLogin</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://www.phptravels.net/login<datalist><option>https://www.phptravels.net/login</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=username<datalist><option>name=username</option><option>//input[@name='username']</option><option>//form[@id='loginfrm']/div/div[5]/div/div/input</option><option>//input</option><option>css=input[name="username"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=username<datalist><option>name=username</option><option>//input[@name='username']</option><option>//form[@id='loginfrm']/div/div[5]/div/div/input</option><option>//input</option><option>css=input[name="username"]</option></datalist></td><td>user@phptravels.net</td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//form[@id='loginfrm']/div/div[5]/div/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="password"]</option></datalist></td><td>demopassword</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//form[@id='loginfrm']/div/div[5]/button</option><option>//div[5]/button</option><option>css=button.btn.btn-action.btn-lg.btn-block.loginbtn</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//form[@id='loginfrm']/div/div[2]/div<datalist><option>//form[@id='loginfrm']/div/div[2]/div</option><option>//div/div[2]/div</option><option>css=div.alert.alert-danger</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//form[@id='loginfrm']/div/div[2]/div<datalist><option>//form[@id='loginfrm']/div/div[2]/div</option><option>//div/div[2]/div</option><option>css=div.alert.alert-danger</option></datalist></td><td>Invalid Email or Password</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">successfulUserLogin</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://www.phptravels.net/login<datalist><option>https://www.phptravels.net/login</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//form[@id='loginfrm']/div/div[5]/div/div<datalist><option>//form[@id='loginfrm']/div/div[5]/div/div</option><option>//div/div[5]/div/div</option><option>css=div.form-group</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=username<datalist><option>name=username</option><option>//input[@name='username']</option><option>//form[@id='loginfrm']/div/div[5]/div/div/input</option><option>//input</option><option>css=input[name="username"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=username<datalist><option>name=username</option><option>//input[@name='username']</option><option>//form[@id='loginfrm']/div/div[5]/div/div/input</option><option>//input</option><option>css=input[name="username"]</option></datalist></td><td>user@phptravels.com</td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//form[@id='loginfrm']/div/div[5]/div/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="password"]</option></datalist></td><td>demouser</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//form[@id='loginfrm']/div/div[5]/button</option><option>//div[5]/button</option><option>css=button.btn.btn-action.btn-lg.btn-block.loginbtn</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[@id='body-section']/div/div/div/div/h3<datalist><option>//div[@id='body-section']/div/div/div/div/h3</option><option>//h3</option><option>css=h3.RTL</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//div[@id='body-section']/div/div/div/div/h3<datalist><option>//div[@id='body-section']/div/div/div/div/h3</option><option>//h3</option><option>css=h3.RTL</option></datalist></td><td>Hi, DVhbCERv IlqEZZxz</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">userChangePassword</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://www.phptravels.net/account/<datalist><option>https://www.phptravels.net/account/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//a[contains(text(),'DVhbCERv')])[2]<datalist><option>xpath=(//a[contains(text(),'DVhbCERv')])[2]</option><option>xpath=(//a[contains(@href, 'javascript:void(0);')])[3]</option><option>//div[2]/ul/li/a</option><option>css=div.col-md-6.col-sm-8.col-xs-5.go-left &gt; ul.nav.navbar-nav.navbar-side.navbar-right.sidebar.go-left &gt; li &gt; a.dropdown-toggle.go-text-right</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//a[contains(text(),'Account')])[2]<datalist><option>xpath=(//a[contains(text(),'Account')])[2]</option><option>xpath=(//a[contains(@href, 'https://www.phptravels.net/account/')])[9]</option><option>//div[2]/ul/li/ul/li/a</option><option>css=li.open &gt; ul.dropdown-menu &gt; li &gt; a.go-text-right</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=My Profile<datalist><option>link=My Profile</option><option>//a[@onclick='mySelectUpdate()']</option><option>//div[@id='body-section']/div/div[3]/div/div/ul/li[2]/a</option><option>//a[contains(@href, '#profile')]</option><option>//div[3]/div/div/ul/li[2]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//form[@id='profilefrm']/div/div[2]/div[2]/div[2]/div[2]/input</option><option>//div[2]/div[2]/div[2]/div[2]/input</option><option>css=input[name="password"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//form[@id='profilefrm']/div/div[2]/div[2]/div[2]/div[2]/input</option><option>//div[2]/div[2]/div[2]/div[2]/input</option><option>css=input[name="password"]</option></datalist></td><td>newpwd</td>
+</tr>
+<tr><td>type</td><td>name=confirmpassword<datalist><option>name=confirmpassword</option><option>//input[@name='confirmpassword']</option><option>//form[@id='profilefrm']/div/div[2]/div[2]/div[3]/div[2]/input</option><option>//div[2]/div[2]/div[3]/div[2]/input</option><option>css=input[name="confirmpassword"]</option></datalist></td><td>newpwd</td>
+</tr>
+<tr><td>click</td><td>//form[@id='profilefrm']/div/div[3]/div[3]/button<datalist><option>//form[@id='profilefrm']/div/div[3]/div[3]/button</option><option>//div[3]/div[3]/button</option><option>css=button.btn.btn-action.btn-block.updateprofile</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[@id='profile']/div[2]/div[2]/div<datalist><option>//div[@id='profile']/div[2]/div[2]/div</option><option>//div[2]/div[2]/div[2]/div</option><option>css=div.alert.alert-success</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//div[@id='profile']/div[2]/div[2]/div<datalist><option>//div[@id='profile']/div[2]/div[2]/div</option><option>//div[2]/div[2]/div[2]/div</option><option>css=div.alert.alert-success</option></datalist></td><td>Profile Updated Successfully.</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">userLoginSearch</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://www.phptravels.net/<datalist><option>https://www.phptravels.net/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//img[contains(@src,'https://www.phptravels.net/themes/default/assets/img/icons/flight.png')]<datalist><option>//img[contains(@src,'https://www.phptravels.net/themes/default/assets/img/icons/flight.png')]</option><option>//nav[@id='offcanvas-menu']/ul/li[2]/a/span/img</option><option>//li[2]/a/span/img</option></datalist></td><td></td>
+</tr>
+<tr><td>selectFrame</td><td>index=0<datalist><option>index=0</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=airports-inline-orig-725db559-39ec-4f1b-a5a1-18f267c5235b<datalist><option>id=airports-inline-orig-725db559-39ec-4f1b-a5a1-18f267c5235b</option><option>//input[@id='airports-inline-orig-725db559-39ec-4f1b-a5a1-18f267c5235b']</option><option>//input</option><option>css=#airports-inline-orig-725db559-39ec-4f1b-a5a1-18f267c5235b</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=airports-inline-orig-725db559-39ec-4f1b-a5a1-18f267c5235b<datalist><option>id=airports-inline-orig-725db559-39ec-4f1b-a5a1-18f267c5235b</option><option>//input[@id='airports-inline-orig-725db559-39ec-4f1b-a5a1-18f267c5235b']</option><option>//input</option><option>css=#airports-inline-orig-725db559-39ec-4f1b-a5a1-18f267c5235b</option></datalist></td><td>bwi</td>
+</tr>
+<tr><td>sendKeys</td><td>id=airports-inline-orig-725db559-39ec-4f1b-a5a1-18f267c5235b<datalist><option>id=airports-inline-orig-725db559-39ec-4f1b-a5a1-18f267c5235b</option><option>//input[@id='airports-inline-orig-725db559-39ec-4f1b-a5a1-18f267c5235b']</option><option>//input</option><option>css=#airports-inline-orig-725db559-39ec-4f1b-a5a1-18f267c5235b</option></datalist></td><td>${KEY_ENTER}</td>
+</tr>
+<tr><td>click</td><td>id=airports-inline-dest-725db559-39ec-4f1b-a5a1-18f267c5235b<datalist><option>id=airports-inline-dest-725db559-39ec-4f1b-a5a1-18f267c5235b</option><option>//input[@id='airports-inline-dest-725db559-39ec-4f1b-a5a1-18f267c5235b']</option><option>//ts-search-airports-return/div/div/input</option><option>css=#airports-inline-dest-725db559-39ec-4f1b-a5a1-18f267c5235b</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=airports-inline-dest-725db559-39ec-4f1b-a5a1-18f267c5235b<datalist><option>id=airports-inline-dest-725db559-39ec-4f1b-a5a1-18f267c5235b</option><option>//input[@id='airports-inline-dest-725db559-39ec-4f1b-a5a1-18f267c5235b']</option><option>//ts-search-airports-return/div/div/input</option><option>css=#airports-inline-dest-725db559-39ec-4f1b-a5a1-18f267c5235b</option></datalist></td><td>mke</td>
+</tr>
+<tr><td>sendKeys</td><td>id=airports-inline-dest-725db559-39ec-4f1b-a5a1-18f267c5235b<datalist><option>id=airports-inline-dest-725db559-39ec-4f1b-a5a1-18f267c5235b</option><option>//input[@id='airports-inline-dest-725db559-39ec-4f1b-a5a1-18f267c5235b']</option><option>//ts-search-airports-return/div/div/input</option><option>css=#airports-inline-dest-725db559-39ec-4f1b-a5a1-18f267c5235b</option></datalist></td><td>${KEY_ENTER}</td>
+</tr>
+<tr><td>click</td><td>//tr[2]/td[3]/button<datalist><option>//tr[2]/td[3]/button</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[@id='trip-type-radio-group']/label/span<datalist><option>//div[@id='trip-type-radio-group']/label/span</option><option>//label/span</option><option>css=label.btn.btn-group__btn.ng-pristine.ng-untouched.ng-valid &gt; span.ng-scope</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=search-for-flights-button<datalist><option>id=search-for-flights-button</option><option>//button[@id='search-for-flights-button']</option><option>//button</option><option>css=#search-for-flights-button</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//section[4]/div<datalist><option>//section[4]/div</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//section[4]/div/div/div/span<datalist><option>//section[4]/div/div/div/span</option><option>css=div.sr-filters__label-helper.ng-scope &gt; span.ng-binding.ng-scope</option></datalist></td><td>Washington to Milwaukee, WI</td>
+</tr>
+<tr><td>selectFrame</td><td>relative=parent<datalist><option>relative=parent</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//img[@alt='PHPTRAVELS'])[2]<datalist><option>xpath=(//img[@alt='PHPTRAVELS'])[2]</option><option>//div[2]/a/img</option><option>css=div.col-md-4.col-sm-3.col-xs-7.go-right &gt; a.navbar-brand.go-right.loader &gt; img.logo</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">userAddTourWishlist</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://www.phptravels.net/login<datalist><option>https://www.phptravels.net/login</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=username<datalist><option>name=username</option><option>//input[@name='username']</option><option>//form[@id='loginfrm']/div/div[5]/div/div/input</option><option>//input</option><option>css=input[name="username"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=username<datalist><option>name=username</option><option>//input[@name='username']</option><option>//form[@id='loginfrm']/div/div[5]/div/div/input</option><option>//input</option><option>css=input[name="username"]</option></datalist></td><td>user@phptravels.com</td>
+</tr>
+<tr><td>click</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//form[@id='loginfrm']/div/div[5]/div/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="password"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//form[@id='loginfrm']/div/div[5]/div/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="password"]</option></datalist></td><td>demouser</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//form[@id='loginfrm']/div/div[5]/button</option><option>//div[5]/button</option><option>css=button.btn.btn-action.btn-lg.btn-block.loginbtn</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//img[contains(@src,'https://www.phptravels.net/themes/default/assets/img/icons/tour.png')]<datalist><option>//img[contains(@src,'https://www.phptravels.net/themes/default/assets/img/icons/tour.png')]</option><option>//nav[@id='offcanvas-menu']/ul/li[4]/a/span/img</option><option>//li[4]/a/span/img</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[@id='body-section']/div[5]/div[3]/div/table/tbody/tr[2]/td/div[2]/div/h4/a/b<datalist><option>//div[@id='body-section']/div[5]/div[3]/div/table/tbody/tr[2]/td/div[2]/div/h4/a/b</option><option>//tr[2]/td/div[2]/div/h4/a/b</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[@id='OVERVIEW']/div[3]/div/div/div[2]/div/div/p[3]<datalist><option>//div[@id='OVERVIEW']/div[3]/div/div/div[2]/div/div/p[3]</option><option>//p[3]</option></datalist></td><td></td>
+</tr>
+<tr><td>chooseOkOnNextConfirmation</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[2]/div[2]/span<datalist><option>//div[2]/div[2]/span</option><option>css=span.btn.wish.addwishlist.btn-danger.btn-outline.btn-block</option></datalist></td><td></td>
+</tr>
+<tr><td>assertConfirmation</td><td>Do you want to add it to wishlist ?<datalist><option>Do you want to add it to wishlist ?</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//div[2]/div[2]/span<datalist><option>//div[2]/div[2]/span</option><option>css=span.btn.wish.btn-danger.btn-outline.btn-block.removewishlist.btn-warning</option></datalist></td><td>Remove from wishlist</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">unsuccessfulSupplierLogin</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://www.phptravels.net/supplier<datalist><option>https://www.phptravels.net/supplier</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=email<datalist><option>name=email</option><option>//input[@name='email']</option><option>//input</option><option>css=input[name="email"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=email<datalist><option>name=email</option><option>//input[@name='email']</option><option>//input</option><option>css=input[name="email"]</option></datalist></td><td>111@gmail.com</td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//input[2]</option><option>css=input[name="password"]</option></datalist></td><td>badbadbad</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//button</option><option>css=button.btn.btn-primary.btn-block.ladda-button.fadeIn.animated</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//body<datalist><option>//body</option><option>css=body</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[2]/div<datalist><option>//div[2]/div</option><option>css=div.alert.alert-danger.loading.wow.fadeIn.animated.animated</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//div[2]/div<datalist><option>//div[2]/div</option><option>css=div.alert.alert-danger.loading.wow.fadeIn.animated.animated</option></datalist></td><td>Invalid Login Credentials</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">successfulSupplierLogin</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://www.phptravels.net/supplier<datalist><option>https://www.phptravels.net/supplier</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=email<datalist><option>name=email</option><option>//input[@name='email']</option><option>//input</option><option>css=input[name="email"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=email<datalist><option>name=email</option><option>//input[@name='email']</option><option>//input</option><option>css=input[name="email"]</option></datalist></td><td>supplier@phptravels.com</td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//input[2]</option><option>css=input[name="password"]</option></datalist></td><td>demosupplier</td>
+</tr>
+<tr><td>click</td><td>//span<datalist><option>//span</option><option>css=span.ladda-label</option></datalist></td><td></td>
+</tr>
+<tr><td>assertTitle</td><td>Dashboard<datalist><option>Dashboard</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">unsuccessfulAdminLogin</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://www.phptravels.net/admin<datalist><option>https://www.phptravels.net/admin</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=email<datalist><option>name=email</option><option>//input[@name='email']</option><option>//input</option><option>css=input[name="email"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=email<datalist><option>name=email</option><option>//input[@name='email']</option><option>//input</option><option>css=input[name="email"]</option></datalist></td><td>aaaaa@gmail.com</td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//input[2]</option><option>css=input[name="password"]</option></datalist></td><td>badbadbad</td>
+</tr>
+<tr><td>click</td><td>//span<datalist><option>//span</option><option>css=span.ladda-label</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//form<datalist><option>//form</option><option>css=form.form-signin.form-horizontal.wow.fadeIn.animated.animated</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[2]/div<datalist><option>//div[2]/div</option><option>css=div.alert.alert-danger.loading.wow.fadeIn.animated.animated</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//div[2]/div<datalist><option>//div[2]/div</option><option>css=div.alert.alert-danger.loading.wow.fadeIn.animated.animated</option></datalist></td><td>Invalid Login Credentials</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">successfulAdminLogin</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://www.phptravels.net/admin<datalist><option>https://www.phptravels.net/admin</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=email<datalist><option>name=email</option><option>//input[@name='email']</option><option>//input</option><option>css=input[name="email"]</option></datalist></td><td>admin@phptravels.com</td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//input[2]</option><option>css=input[name="password"]</option></datalist></td><td>demoadmin</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//button</option><option>css=button.btn.btn-primary.btn-block.ladda-button.fadeIn.animated</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyTitle</td><td>Dashboard<datalist><option>Dashboard</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">adminAddNewTour</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://www.phptravels.net/admin<datalist><option>https://www.phptravels.net/admin</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=email<datalist><option>name=email</option><option>//input[@name='email']</option><option>//input</option><option>css=input[name="email"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=email<datalist><option>name=email</option><option>//input[@name='email']</option><option>//input</option><option>css=input[name="email"]</option></datalist></td><td>admin@phptravels.com</td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//input[2]</option><option>css=input[name="password"]</option></datalist></td><td>demoadmin</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//button</option><option>css=button.btn.btn-primary.btn-block.ladda-button.fadeIn.animated</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//a[contains(text(),'Modules')])[2]<datalist><option>xpath=(//a[contains(text(),'Modules')])[2]</option><option>//div[@id='navbar']/ul/li[4]/a</option><option>xpath=(//a[contains(@href, 'javascript:void(0)')])[4]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Add New<datalist><option>link=Add New</option><option>//a[contains(text(),'Add New')]</option><option>//ul[@id='Tours']/li[2]/a</option><option>//a[contains(@href, 'https://www.phptravels.net/admin/tours/add/')]</option><option>//li[4]/ul/li/ul/li[2]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=tourname<datalist><option>name=tourname</option><option>//input[@name='tourname']</option><option>//div[@id='GENERAL']/div[3]/div/input</option><option>//input</option><option>css=input[name="tourname"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=tourname<datalist><option>name=tourname</option><option>//input[@name='tourname']</option><option>//div[@id='GENERAL']/div[3]/div/input</option><option>//input</option><option>css=input[name="tourname"]</option></datalist></td><td>fake</td>
+</tr>
+<tr><td>selectFrame</td><td>index=0<datalist><option>index=0</option></datalist></td><td></td>
+</tr>
+<tr><td>editContent</td><td>//body<datalist><option>//body</option><option>css=body.cke_editable.cke_editable_themed.cke_contents_ltr.cke_show_borders</option></datalist></td><td>&lt;p&gt;fake fake&lt;/p&gt;</td>
+</tr>
+<tr><td>selectFrame</td><td>relative=parent<datalist><option>relative=parent</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=maxadult<datalist><option>name=maxadult</option><option>//input[@name='maxadult']</option><option>//div[@id='GENERAL']/div[5]/div/table/tbody/tr[2]/td[2]/input</option><option>//td[2]/input</option><option>css=input[name="maxadult"]</option></datalist></td><td>1</td>
+</tr>
+<tr><td>click</td><td>name=adultprice<datalist><option>name=adultprice</option><option>//input[@name='adultprice']</option><option>//div[@id='GENERAL']/div[5]/div/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="adultprice"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=adultprice<datalist><option>name=adultprice</option><option>//input[@name='adultprice']</option><option>//div[@id='GENERAL']/div[5]/div/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="adultprice"]</option></datalist></td><td>100.99</td>
+</tr>
+<tr><td>click</td><td>//div[@id='GENERAL']/div[6]<datalist><option>//div[@id='GENERAL']/div[6]</option><option>//div/div/div/div/div[6]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=tourstars<datalist><option>name=tourstars</option><option>//select[@name='tourstars']</option><option>//div[@id='GENERAL']/div[6]/div/select</option><option>//div[6]/div/select</option><option>css=select[name="tourstars"]</option></datalist></td><td></td>
+</tr>
+<tr><td>select</td><td>name=tourstars<datalist><option>name=tourstars</option><option>//select[@name='tourstars']</option><option>//div[@id='GENERAL']/div[6]/div/select</option><option>//div[6]/div/select</option><option>css=select[name="tourstars"]</option></datalist></td><td>label=5</td>
+</tr>
+<tr><td>click</td><td>name=tourstars<datalist><option>name=tourstars</option><option>//select[@name='tourstars']</option><option>//div[@id='GENERAL']/div[6]/div/select</option><option>//div[6]/div/select</option><option>css=select[name="tourstars"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=tourdays<datalist><option>name=tourdays</option><option>//input[@name='tourdays']</option><option>//div[@id='GENERAL']/div[7]/div/input</option><option>//div[7]/div/input</option><option>css=input[name="tourdays"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=tourdays<datalist><option>name=tourdays</option><option>//input[@name='tourdays']</option><option>//div[@id='GENERAL']/div[7]/div/input</option><option>//div[7]/div/input</option><option>css=input[name="tourdays"]</option></datalist></td><td>2</td>
+</tr>
+<tr><td>click</td><td>name=tournights<datalist><option>name=tournights</option><option>//input[@name='tournights']</option><option>//div[@id='GENERAL']/div[8]/div/input</option><option>//div[8]/div/input</option><option>css=input[name="tournights"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=tournights<datalist><option>name=tournights</option><option>//input[@name='tournights']</option><option>//div[@id='GENERAL']/div[8]/div/input</option><option>//div[8]/div/input</option><option>css=input[name="tournights"]</option></datalist></td><td>1</td>
+</tr>
+<tr><td>click</td><td>id=content<datalist><option>id=content</option><option>//div[@id='content']</option><option>//div[2]/div/div</option><option>css=#content</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=add<datalist><option>id=add</option><option>//button[@id='add']</option><option>//div[@id='content']/form/div/div[2]/button</option><option>//div[2]/button</option><option>css=#add</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[@id='content']/div/div[2]/div/div/div/div[2]/table/tbody/tr<datalist><option>//div[@id='content']/div/div[2]/div/div/div/div[2]/table/tbody/tr</option><option>//tbody/tr</option><option>css=tr.xcrud-row.xcrud-row-0</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>link=fake<datalist><option>link=fake</option><option>//a[contains(text(),'fake')]</option><option>//div[@id='content']/div/div[2]/div/div/div/div[2]/table/tbody/tr/td[5]/a</option><option>//a[contains(@href, 'https://www.phptravels.net/admin/tours/manage/fake')]</option><option>//td[5]/a</option></datalist></td><td>fake</td>
+</tr>
+</tbody></table>
+</body>
+</html>
